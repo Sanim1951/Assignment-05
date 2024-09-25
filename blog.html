@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Blog Page</title>
+    <!-- cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="">
+      <!-- navbar -->
+      <nav
+        class="fixed z-50 top-0 w-full mx-auto bg-[#F9F7F3] shadow-lg py-4 px-6 flex justify-between items-center"
+      >
+        <div class="flex items-center flex-1 w-1/2 justify-between">
+          <button
+            id="blog-btn"
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]"
+          >
+            Blog
+          </button>
+          <h1 class="text-xl font-bold flex justify-center items-center">
+            <span class="mr-2"><img src="./assets/logo.png" alt="" /></span
+            >Donate Bangladesh
+          </h1>
+        </div>
+        <div
+          class="text-slate-900 flex justify-end font-bold text-lg w-1/2 text-right"
+        >
+          <span><img src="./assets/coin.png" alt="" /></span>
+          <span id="balance">4400</span> BDT
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto mt-32 mb-10">
+      <div class="my-4">
+        <h1 class="font-bold text-4xl">Important FAQ</h1>
+      </div>
+      <div class="space-y-3">
+        <div class="collapse collapse-arrow bg-base-200 space-y-8">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the document object model(DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+                DOM or Document Object Model, is a programming interface that represents structured documents like HTML and XML as a tree of objects. It defines how to access, manipulate, and modify document elements using scripting languages like JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>let x = document.getElementById("mySelect");</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why it is
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+                Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and style using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              You can manipulate an element's attributes with setAttribute() and
+              its style with the style property in the DOM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/donatebd.js"></script>
+  </body>
+</html>
