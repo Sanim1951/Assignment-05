@@ -3,3 +3,12 @@
 body {
   font-family: "Lexend", sans-serif;
 }
+
+#donation-btn:hover {
+    background-color: #b4f461;
+    cursor: pointer;
+  }
+  #history-btn:hover {
+    background-color: #b4f461;
+    cursor: pointer;
+  }
